@@ -6,7 +6,7 @@ import logoPrimorArte from "@/assets/logo-primorarte.png";
 import brancoNeve from "@/assets/branco-neve.jpg";
 import cinzaNevoa from "@/assets/cinza-nevoa.jpg";
 import pretoAbsoluto from "@/assets/preto-absoluto.jpg";
-import douradoImperial from "@/assets/dourado-imperial.jpg";
+import pedraTajMahal from "@/assets/pedra-taj-mahal.jpg";
 import marmoreCarrara from "@/assets/marmore-carrara.jpg";
 import marmoreCalacatta from "@/assets/marmore-calacatta.jpg";
 import marmoreCremaMarfil from "@/assets/marmore-crema-marfil.jpg";
@@ -95,9 +95,9 @@ const MATERIALS = [
     image: quartzoPretoStellar,
   },
   {
-    name: "Dourado Imperial",
-    kind: "Quartzo · brilho",
-    image: douradoImperial,
+    name: "Pedra Taj Mahal",
+    kind: "Quartzito · polido",
+    image: pedraTajMahal,
   },
 ];
 
