@@ -7,6 +7,14 @@ import brancoNeve from "@/assets/branco-neve.jpg";
 import cinzaNevoa from "@/assets/cinza-nevoa.jpg";
 import pretoAbsoluto from "@/assets/preto-absoluto.jpg";
 import douradoImperial from "@/assets/dourado-imperial.jpg";
+import marmoreCarrara from "@/assets/marmore-carrara.jpg";
+import marmoreCalacatta from "@/assets/marmore-calacatta.jpg";
+import travertinoRomano from "@/assets/travertino-romano.jpg";
+import granitoPretoSaoGabriel from "@/assets/granito-preto-sao-gabriel.jpg";
+import granitoCafeImperial from "@/assets/granito-cafe-imperial.jpg";
+import granitoBrancoItaunas from "@/assets/granito-branco-itaunas.jpg";
+import quartzoCalacattaGold from "@/assets/quartzo-calacatta-gold.jpg";
+import quartzoCinzaUrbano from "@/assets/quartzo-cinza-urbano.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,21 +44,36 @@ export const Route = createFileRoute("/")({
 const WHATSAPP_NUMBER = "5512988408638";
 
 const MATERIALS = [
+  // Mármores
+  { name: "Branco Carrara", kind: "Mármore · polido", image: marmoreCarrara },
+  { name: "Calacatta", kind: "Mármore · polido", image: marmoreCalacatta },
+  { name: "Travertino Romano", kind: "Mármore · fosco", image: travertinoRomano },
+  // Granitos
   {
-    name: "Branco Neve",
-    kind: "Quartzo · fosco",
-    image: brancoNeve,
-  },
-  {
-    name: "Cinza Névoa",
+    name: "Preto São Gabriel",
     kind: "Granito · polido",
-    image: cinzaNevoa,
+    image: granitoPretoSaoGabriel,
+  },
+  { name: "Preto Absoluto", kind: "Granito · levigado", image: pretoAbsoluto },
+  {
+    name: "Café Imperial",
+    kind: "Granito · polido",
+    image: granitoCafeImperial,
   },
   {
-    name: "Preto Absoluto",
-    kind: "Granito · levigado",
-    image: pretoAbsoluto,
+    name: "Branco Itaúnas",
+    kind: "Granito · polido",
+    image: granitoBrancoItaunas,
   },
+  { name: "Cinza Névoa", kind: "Granito · escovado", image: cinzaNevoa },
+  // Quartzos
+  { name: "Branco Neve", kind: "Quartzo · fosco", image: brancoNeve },
+  {
+    name: "Calacatta Gold",
+    kind: "Quartzo · brilho",
+    image: quartzoCalacattaGold,
+  },
+  { name: "Cinza Urbano", kind: "Quartzo · fosco", image: quartzoCinzaUrbano },
   {
     name: "Dourado Imperial",
     kind: "Quartzo · brilho",
@@ -169,9 +192,9 @@ function Hero() {
             <p className="text-[10px] font-medium uppercase tracking-[0.25em] text-muted-foreground">
               Mais pedido
             </p>
-            <p className="font-display text-2xl">Marmo Carrara</p>
+            <p className="font-display text-2xl">Granito Preto São Gabriel</p>
             <p className="text-sm text-muted-foreground">
-              Branco com veios finos · polido
+              Preto uniforme · polido
             </p>
           </div>
         </div>
@@ -332,7 +355,9 @@ function Footer() {
           />
           <p>© PrimorArte Premium</p>
         </div>
-        <p className="text-xs">Atendimento seg–sáb · 8h às 18h</p>
+        <p className="text-xs">
+          Seg–Qui 8h às 17h30 · Sex 8h às 16h30 · Sáb somente agendado
+        </p>
       </div>
     </footer>
   );
