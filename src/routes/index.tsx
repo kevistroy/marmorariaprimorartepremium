@@ -328,7 +328,7 @@ function Footer() {
             alt="PrimorArte Premium"
             width={1152}
             height={576}
-            className="h-10 w-auto"
+            className="h-14 w-auto"
           />
           <p>© PrimorArte Premium</p>
         </div>
