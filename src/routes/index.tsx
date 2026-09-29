@@ -52,6 +52,7 @@ const MATERIALS = [
   { name: "Branco Carrara", kind: "Mármore · polido", image: marmoreCarrara },
   { name: "Calacatta", kind: "Mármore · polido", image: marmoreCalacatta },
   { name: "Travertino Romano", kind: "Mármore · fosco", image: travertinoRomano },
+  { name: "Crema Marfil", kind: "Mármore · polido", image: marmoreCremaMarfil },
   // Granitos
   {
     name: "Preto São Gabriel",
@@ -70,6 +71,16 @@ const MATERIALS = [
     image: granitoBrancoItaunas,
   },
   { name: "Cinza Névoa", kind: "Granito · escovado", image: cinzaNevoa },
+  {
+    name: "Cinza Corumbá",
+    kind: "Granito · polido",
+    image: granitoCinzaCorumba,
+  },
+  {
+    name: "Verde Ubatuba",
+    kind: "Granito · polido",
+    image: granitoVerdeUbatuba,
+  },
   // Quartzos
   { name: "Branco Neve", kind: "Quartzo · fosco", image: brancoNeve },
   {
@@ -78,6 +89,11 @@ const MATERIALS = [
     image: quartzoCalacattaGold,
   },
   { name: "Cinza Urbano", kind: "Quartzo · fosco", image: quartzoCinzaUrbano },
+  {
+    name: "Preto Stellar",
+    kind: "Quartzo · brilho",
+    image: quartzoPretoStellar,
+  },
   {
     name: "Dourado Imperial",
     kind: "Quartzo · brilho",
@@ -169,8 +185,8 @@ function Hero() {
           </div>
           <div className="rise-in delay-4 mt-10 flex gap-8 text-sm text-muted-foreground">
             <div>
-              <p className="font-display text-3xl text-ice">12+</p>
-              Anos de bancada
+            <p className="font-display text-3xl text-ice">+12</p>
+              Anos de serviços
             </div>
             <div>
               <p className="font-display text-3xl text-ice">40</p>
