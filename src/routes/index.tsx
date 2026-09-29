@@ -11,14 +11,14 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Marmoraria Vértice Pedras — Mármore, Granito e Quartzo",
+        title: "PrimorArte Premium — Mármore, Granito e Quartzo",
       },
       {
         name: "description",
         content:
           "Mármore, granito e quartzo selecionados, cortados com precisão e instalados pela nossa equipe. Peça seu orçamento direto pelo WhatsApp.",
       },
-      { property: "og:title", content: "Marmoraria Vértice Pedras" },
+      { property: "og:title", content: "PrimorArte Premium" },
       {
         property: "og:description",
         content:
@@ -31,8 +31,8 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// TODO: substituir pelo número real do WhatsApp da empresa (formato internacional, só dígitos).
-const WHATSAPP_NUMBER = "5511999999999";
+// WhatsApp da PrimorArte Premium (formato internacional, só dígitos).
+const WHATSAPP_NUMBER = "5512988408638";
 
 const MATERIALS = [
   {
@@ -84,9 +84,9 @@ function Header() {
           M
         </div>
         <div className="leading-tight">
-          <p className="font-display text-xl tracking-wide">Marmoraria</p>
+          <p className="font-display text-xl tracking-wide">PrimorArte</p>
           <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-muted-foreground">
-            Vértice Pedras
+            Premium
           </p>
         </div>
       </a>
@@ -323,7 +323,7 @@ function Footer() {
   return (
     <footer className="relative z-10 border-t border-white/10 bg-white/5 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-8 py-6 text-sm text-muted-foreground md:flex-row">
-        <p>© Marmoraria Vértice Pedras</p>
+        <p>© PrimorArte Premium</p>
         <p className="text-xs">Atendimento seg–sáb · 8h às 18h</p>
       </div>
     </footer>
