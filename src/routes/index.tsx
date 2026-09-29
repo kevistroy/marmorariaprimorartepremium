@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 
-import heroMarble from "@/assets/hero-marble.jpg";
+import heroPretoSaoGabriel from "@/assets/hero-preto-sao-gabriel.jpg";
 import logoPrimorArte from "@/assets/logo-primorarte.png";
 import brancoNeve from "@/assets/branco-neve.jpg";
 import cinzaNevoa from "@/assets/cinza-nevoa.jpg";
@@ -9,12 +9,16 @@ import pretoAbsoluto from "@/assets/preto-absoluto.jpg";
 import douradoImperial from "@/assets/dourado-imperial.jpg";
 import marmoreCarrara from "@/assets/marmore-carrara.jpg";
 import marmoreCalacatta from "@/assets/marmore-calacatta.jpg";
+import marmoreCremaMarfil from "@/assets/marmore-crema-marfil.jpg";
 import travertinoRomano from "@/assets/travertino-romano.jpg";
 import granitoPretoSaoGabriel from "@/assets/granito-preto-sao-gabriel.jpg";
 import granitoCafeImperial from "@/assets/granito-cafe-imperial.jpg";
 import granitoBrancoItaunas from "@/assets/granito-branco-itaunas.jpg";
+import granitoCinzaCorumba from "@/assets/granito-cinza-corumba.jpg";
+import granitoVerdeUbatuba from "@/assets/granito-verde-ubatuba.jpg";
 import quartzoCalacattaGold from "@/assets/quartzo-calacatta-gold.jpg";
 import quartzoCinzaUrbano from "@/assets/quartzo-cinza-urbano.jpg";
+import quartzoPretoStellar from "@/assets/quartzo-preto-stellar.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
