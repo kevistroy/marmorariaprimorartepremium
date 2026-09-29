@@ -1,4 +1,11 @@
+import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+
+import heroMarble from "@/assets/hero-marble.jpg";
+import brancoNeve from "@/assets/branco-neve.jpg";
+import cinzaNevoa from "@/assets/cinza-nevoa.jpg";
+import pretoAbsoluto from "@/assets/preto-absoluto.jpg";
+import douradoImperial from "@/assets/dourado-imperial.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
