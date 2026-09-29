@@ -229,7 +229,7 @@ function Budget() {
     event.preventDefault();
 
     const texto = [
-      "Olá! Gostaria de um orçamento.",
+      "Olá, PrimorArte Premium! Gostaria de um orçamento.",
       "",
       `Nome: ${nome}`,
       `Contato: ${contato}`,
