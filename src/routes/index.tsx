@@ -2,6 +2,7 @@ import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 
 import heroMarble from "@/assets/hero-marble.jpg";
+import logoPrimorArte from "@/assets/logo-primorarte.png";
 import brancoNeve from "@/assets/branco-neve.jpg";
 import cinzaNevoa from "@/assets/cinza-nevoa.jpg";
 import pretoAbsoluto from "@/assets/preto-absoluto.jpg";
@@ -79,16 +80,14 @@ function Index() {
 function Header() {
   return (
     <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
-      <a href="#" className="flex items-center gap-3">
-        <div className="grid size-10 place-items-center rounded-xl bg-brand font-black text-primary-foreground">
-          M
-        </div>
-        <div className="leading-tight">
-          <p className="font-display text-xl tracking-wide">PrimorArte</p>
-          <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-muted-foreground">
-            Premium
-          </p>
-        </div>
+      <a href="#" className="flex items-center">
+        <img
+          src={logoPrimorArte}
+          alt="PrimorArte Premium"
+          width={1152}
+          height={576}
+          className="h-12 w-auto md:h-14"
+        />
       </a>
       <nav className="hidden items-center gap-9 text-sm text-muted-foreground md:flex">
         <a href="#materiais" className="transition hover:text-brand">
@@ -322,8 +321,17 @@ function Budget() {
 function Footer() {
   return (
     <footer className="relative z-10 border-t border-white/10 bg-white/5 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-8 py-6 text-sm text-muted-foreground md:flex-row">
-        <p>© PrimorArte Premium</p>
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-8 py-7 text-sm text-muted-foreground md:flex-row md:justify-between">
+        <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
+          <img
+            src={logoPrimorArte}
+            alt="PrimorArte Premium"
+            width={1152}
+            height={576}
+            className="h-10 w-auto"
+          />
+          <p>© PrimorArte Premium</p>
+        </div>
         <p className="text-xs">Atendimento seg–sáb · 8h às 18h</p>
       </div>
     </footer>
