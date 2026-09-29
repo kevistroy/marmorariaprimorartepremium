@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 
-import heroMarble from "@/assets/hero-marble.jpg";
+import heroPretoSaoGabriel from "@/assets/hero-preto-sao-gabriel.jpg";
 import logoPrimorArte from "@/assets/logo-primorarte.png";
 import brancoNeve from "@/assets/branco-neve.jpg";
 import cinzaNevoa from "@/assets/cinza-nevoa.jpg";
@@ -9,12 +9,16 @@ import pretoAbsoluto from "@/assets/preto-absoluto.jpg";
 import douradoImperial from "@/assets/dourado-imperial.jpg";
 import marmoreCarrara from "@/assets/marmore-carrara.jpg";
 import marmoreCalacatta from "@/assets/marmore-calacatta.jpg";
+import marmoreCremaMarfil from "@/assets/marmore-crema-marfil.jpg";
 import travertinoRomano from "@/assets/travertino-romano.jpg";
 import granitoPretoSaoGabriel from "@/assets/granito-preto-sao-gabriel.jpg";
 import granitoCafeImperial from "@/assets/granito-cafe-imperial.jpg";
 import granitoBrancoItaunas from "@/assets/granito-branco-itaunas.jpg";
+import granitoCinzaCorumba from "@/assets/granito-cinza-corumba.jpg";
+import granitoVerdeUbatuba from "@/assets/granito-verde-ubatuba.jpg";
 import quartzoCalacattaGold from "@/assets/quartzo-calacatta-gold.jpg";
 import quartzoCinzaUrbano from "@/assets/quartzo-cinza-urbano.jpg";
+import quartzoPretoStellar from "@/assets/quartzo-preto-stellar.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -48,6 +52,7 @@ const MATERIALS = [
   { name: "Branco Carrara", kind: "Mármore · polido", image: marmoreCarrara },
   { name: "Calacatta", kind: "Mármore · polido", image: marmoreCalacatta },
   { name: "Travertino Romano", kind: "Mármore · fosco", image: travertinoRomano },
+  { name: "Crema Marfil", kind: "Mármore · polido", image: marmoreCremaMarfil },
   // Granitos
   {
     name: "Preto São Gabriel",
@@ -66,6 +71,16 @@ const MATERIALS = [
     image: granitoBrancoItaunas,
   },
   { name: "Cinza Névoa", kind: "Granito · escovado", image: cinzaNevoa },
+  {
+    name: "Cinza Corumbá",
+    kind: "Granito · polido",
+    image: granitoCinzaCorumba,
+  },
+  {
+    name: "Verde Ubatuba",
+    kind: "Granito · polido",
+    image: granitoVerdeUbatuba,
+  },
   // Quartzos
   { name: "Branco Neve", kind: "Quartzo · fosco", image: brancoNeve },
   {
@@ -74,6 +89,11 @@ const MATERIALS = [
     image: quartzoCalacattaGold,
   },
   { name: "Cinza Urbano", kind: "Quartzo · fosco", image: quartzoCinzaUrbano },
+  {
+    name: "Preto Stellar",
+    kind: "Quartzo · brilho",
+    image: quartzoPretoStellar,
+  },
   {
     name: "Dourado Imperial",
     kind: "Quartzo · brilho",
@@ -165,8 +185,8 @@ function Hero() {
           </div>
           <div className="rise-in delay-4 mt-10 flex gap-8 text-sm text-muted-foreground">
             <div>
-              <p className="font-display text-3xl text-ice">12+</p>
-              Anos de bancada
+            <p className="font-display text-3xl text-ice">+12</p>
+              Anos de serviços
             </div>
             <div>
               <p className="font-display text-3xl text-ice">40</p>
@@ -181,8 +201,8 @@ function Hero() {
         <div className="relative">
           <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-white/5 outline-1 -outline-offset-1 outline-white/10">
             <img
-              src={heroMarble}
-              alt="Laixa de mármore branco com veios cinzas iluminada por spot"
+              src={heroPretoSaoGabriel}
+              alt="Placa de granito Preto São Gabriel iluminada por spot no showroom"
               width={1024}
               height={1280}
               className="size-full object-cover"
