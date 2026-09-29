@@ -201,8 +201,8 @@ function Hero() {
         <div className="relative">
           <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-white/5 outline-1 -outline-offset-1 outline-white/10">
             <img
-              src={heroMarble}
-              alt="Laixa de mármore branco com veios cinzas iluminada por spot"
+              src={heroPretoSaoGabriel}
+              alt="Placa de granito Preto São Gabriel iluminada por spot no showroom"
               width={1024}
               height={1280}
               className="size-full object-cover"
