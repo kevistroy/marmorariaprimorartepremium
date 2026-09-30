@@ -47,6 +47,9 @@ export const Route = createFileRoute("/")({
 // WhatsApp da PrimorArte Premium (formato internacional, só dígitos).
 const WHATSAPP_NUMBER = "5512988408638";
 
+// Instagram oficial da PrimorArte Premium — obras realizadas.
+const INSTAGRAM_URL = "https://www.instagram.com/primorartepremium";
+
 const MATERIALS = [
   // Mármores
   { name: "Branco Carrara", kind: "Mármore · polido", image: marmoreCarrara },
@@ -140,13 +143,35 @@ function Header() {
           Contato
         </a>
       </nav>
-      <a
-        href="#orcamento"
-        className="rounded-full bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition hover:bg-primary/90"
-      >
-        Orçamento
-      </a>
+      <div className="flex items-center gap-3">
+        <a
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram da PrimorArte Premium"
+          className="hidden items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-semibold text-ice backdrop-blur-md transition hover:border-brand/60 hover:text-brand sm:flex"
+        >
+          <InstagramIcon className="size-4" />
+          @primorartepremium
+        </a>
+        <a
+          href="#orcamento"
+          className="rounded-full bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition hover:bg-primary/90"
+        >
+          Orçamento
+        </a>
+      </div>
     </header>
+  );
+}
+
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none" />
+    </svg>
   );
 }
 
@@ -378,6 +403,15 @@ function Footer() {
         <p className="text-xs">
           Seg–Qui 8h às 17h30 · Sex 8h às 16h30 · Sáb somente agendado
         </p>
+        <a
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 transition hover:text-brand"
+        >
+          <InstagramIcon className="size-4 text-brand" />
+          @primorartepremium — veja nossas obras
+        </a>
       </div>
     </footer>
   );
