@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# Marble Elegance
+
+quero criar  um site para minha empresa de marmoraria, a paleta de cores da empresa é cinza, preto e amarelo, quero sofisticação nesse site no intuito de mostrar cores de materias e uma parte de orçamento para enviar o nome e o contato do cliente direto pro meu whatsapp
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://marmorariaprimorartepremium.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/5854f1eb-8402-4e26-982e-3ca4ce7086bd).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
